@@ -75,3 +75,10 @@ services:
     container_name: apache
     ports:
       - "8083:80"
+    depends_on:
+      - java
+  java:
+    build: ./java
+    container_name: java
+    ports:
+      - "9090:9090"
