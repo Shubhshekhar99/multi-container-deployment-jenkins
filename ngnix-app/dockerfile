@@ -1,0 +1,10 @@
+FROM nginx:latest
+
+# Copy your HTML page to NGINX default web root
+COPY index.html /usr/share/nginx/html/index.html
+
+# Expose default NGINX port
+EXPOSE 80
+
+# Start NGINX in foreground
+CMD ["nginx", "-g", "daemon off;"]

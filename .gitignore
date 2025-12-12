@@ -1,0 +1,36 @@
+# Node.js
+node/node_modules/
+node/npm-debug.log
+
+# Python
+python-app/__pycache__/
+python-app/*.pyc
+python-app/env/
+python-app/.env
+python-app/*.log
+
+# PHP
+php-app/vendor/
+php-app/.env
+php-app/*.log
+
+# Docker
+*.log
+*.pid
+*.env
+docker-compose.override.yaml
+docker-compose.override.yml
+**/Dockerfile.swp
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.swp
