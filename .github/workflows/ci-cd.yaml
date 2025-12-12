@@ -20,9 +20,9 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push all services
-        uses: docker/bake-action@v3
+        uses: docker/bake-action@v5
         with:
-          files: docker-compose.yml
+          files: docker-compose.yaml
           push: true
 
   # deploy:
