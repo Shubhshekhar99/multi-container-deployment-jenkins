@@ -39,7 +39,7 @@ services:
       - ngnix
 
   ngnix:
-    build: ./ngnix-app
+    build: ./nginx-app
     container_name: ngnix
     ports:
       - "8081:80"
