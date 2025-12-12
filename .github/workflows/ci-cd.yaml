@@ -24,6 +24,19 @@ jobs:
         with:
           files: docker-compose.yaml
           push: true
+          set: |
+            nodejs.tags=${{ secrets.DOCKERHUB_USERNAME }}/nodejs-app:latest
+            python.tags=${{ secrets.DOCKERHUB_USERNAME }}/python-app:latest
+            php.tags=${{ secrets.DOCKERHUB_USERNAME }}/php-app:latest
+            mysql.tags=${{ secrets.DOCKERHUB_USERNAME }}/mysql-app:latest
+            nginx.tags=${{ secrets.DOCKERHUB_USERNAME }}/nginx-app:latest
+            mongodb.tags=${{ secrets.DOCKERHUB_USERNAME }}/mongodb-app:latest
+            rabbitmq.tags=${{ secrets.DOCKERHUB_USERNAME }}/rabbitmq-app:latest
+            redis.tags=${{ secrets.DOCKERHUB_USERNAME }}/redis-app:latest
+            apache.tags=${{ secrets.DOCKERHUB_USERNAME }}/apache-app:latest
+            java.tags=${{ secrets.DOCKERHUB_USERNAME }}/java-app:latest
+
+
 
   # deploy:
   #   needs: build
