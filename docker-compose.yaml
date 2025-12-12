@@ -19,7 +19,7 @@ services:
       - php
 
   php:
-    image: php:8.2-apache
+    build: ./php
     container_name: php
     ports:
       - "8082:80"
@@ -29,7 +29,7 @@ services:
       - mysql
 
   mysql:
-    image: mysql:8
+    build: ./mysql
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
