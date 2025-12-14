@@ -38,7 +38,7 @@ services:
     depends_on:
       - ngnix
 
-  ngnix:
+  nginx:
     build: ./nginx-app
     container_name: nginx
     ports:
