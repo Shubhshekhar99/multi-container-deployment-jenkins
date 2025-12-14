@@ -40,7 +40,7 @@ services:
 
   ngnix:
     build: ./nginx-app
-    container_name: ngnix
+    container_name: nginx
     ports:
       - "8081:80"
     depends_on:
